@@ -15,11 +15,12 @@ def fib_mem(n):
         return arr[n]
 
 
-arr = [-1] * 50
-arr[1]=1
-arr[2]=1
+
 startime=time.time()
 b=int(sys.argv[1])
+arr = [-1] * (b+1)
+arr[1]=1
+arr[2]=1
 a=fib_mem(b)
 elapsedtime=time.time()-startime
 print (a)
