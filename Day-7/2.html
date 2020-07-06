@@ -1,0 +1,33 @@
+<html>
+
+<head>
+    <title>KO tutorial</title>
+<script src="D:\15-OJET\Training\knockout-3.5.1.js">
+
+</script>
+
+</head>
+
+<body>
+    Name please: <input type="text" data-bind="value: myName, valueUpdate:'afterkeydown'"><br>
+    city please: <input type="text" data-bind="value: myLocation, valueUpdate:'afterkeydown'"><br>
+    <h1 style="color:red" data-bind="text: myName"></h1>
+    <h1 style="color:brown" data-bind="text: myLocation"></h1>
+
+</body>
+
+
+<script>
+    function f1()
+    {
+        // Define the model required for this view (VM)
+        this.myName=ko.observable('Guru');
+        this.myLocation=ko.observable("bangalore");
+        //this.myName="Guru";
+    }
+
+    // how to enable ko
+    ko.applyBindings(new f1());
+</script>
+
+</html>
