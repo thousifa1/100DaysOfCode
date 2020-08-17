@@ -1,0 +1,33 @@
+<html>
+
+<head>
+    <title>This is my title</title>
+
+</head>
+
+<body>
+
+    <p id="Test" onmouseover="f1()">Hover me</p>
+    <button id="TestH1" onclick="f2()">Click ME</button>
+    <button id="TestH2" onclick="docu_write()">Click ME 2 docu write</button>
+    <p id=TestButton></p>
+    <script>
+        var count = 1;
+        function f1() {
+
+            document.getElementById('Test').innerHTML = 'My Test is Executing ' + count + '';
+            if (count % 2 == 0) {
+                document.getElementById('Test').style.color = "blue";
+            }
+            else {
+                document.getElementById('Test').style.color = "red";
+            }
+
+            count = count + 1;
+        }
+
+    </script>
+    <script src="./1.js"></script>
+</body>
+
+</html>
